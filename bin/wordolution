@@ -26,7 +26,7 @@ parser.add_argument('-p', '--population', help='The population size to use.',
 if __name__ == '__main__':
     args = parser.parse_args()
     word = args.word.lower()
-    size = 10
+    size = 20
     if args.population:
         size = args.population
     start_population = words.create_population(size, word)
